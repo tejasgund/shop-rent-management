@@ -25,7 +25,7 @@ function Login() {
 
   const adminLoginMutation = useMutation(
     async (data) => {
-      const response = await axios.post('http://localhost:8000/api/auth/admin/login', data);
+      const response = await axios.post('http://13.205.70.46:8000/api/auth/admin/login', data);
       return response.data;
     },
     {
@@ -45,7 +45,7 @@ function Login() {
 
   const tenantLoginMutation = useMutation(
     async (data) => {
-      const response = await axios.post('http://localhost:8000/api/auth/tenant/login', data);
+      const response = await axios.post('http://13.205.70.46:8000/api/auth/tenant/login', data);
       return response.data;
     },
     {
